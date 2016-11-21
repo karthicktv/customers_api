@@ -32,7 +32,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  'GET /user/:id': 'UserController.getUser'
+  'GET /user/joke/:id': 'UserController.getUser'
 
 
 

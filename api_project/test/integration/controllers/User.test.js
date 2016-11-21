@@ -50,6 +50,18 @@ describe('Test for /user api', function() {
         var reply = res.body;
         should.not.exist(err);
         reply.id.should.equal(createdModel.id);
+        done();
+      });
+  });
+
+  it('should find a user with a joke', function(done) {
+    request(sails.hooks.http.app)
+      .get('/user/joke/'+createdModel.id)
+      .expect(200)
+      .end(function(err, res) {
+        var reply = res.body;
+        should.not.exist(err);
+        reply.id.should.equal(createdModel.id);
         reply.joke.should.be.an('string');
         done();
       });
