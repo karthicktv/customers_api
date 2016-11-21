@@ -1,6 +1,6 @@
 # User API demonstration
 
-To execute the application you should have installed a version of Node.JS with ES6 support.
+To execute the application you should have installed a version of Node.JS with ES6 support (i.e. developped in v6.2.0)
 
 This application is using SAILS.JS in drop mode, so every time that you launch the application the content of the sqlite3 database will be wiped.
 
